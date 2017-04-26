@@ -1,0 +1,21 @@
+<!--pages/main/index.wxml-->
+<view class="container">
+
+
+    <text style="color: #333333;font-size: 40rpx;margin-top: 40rpx;margin-bottom: 40rpx">{{barcode}}</text>
+    <view style="display: flex;flex-direction: column;justify-content: center;align-items:center;background-color: #f1f1f1;padding-top: 60rpx;padding-left20rpx;padding-right20rpx;border-radius: 30rpx;">
+        <canvas   style="width: 660rpx;height: 200rpx;" canvas-id="barcodeCanvas"/>
+
+        <view style="height: 40rpx;width: 0"></view>
+        <canvas  style="width: 500rpx;height: 500rpx;" canvas-id="qrcodeCanvas"/>
+    </view>
+
+    <view style="display: flex;flex-direction: row;justify-content: center">
+        <text style="color: #333333;font-size: 30rpx;padding-right: 200rpx;padding-left: 200rpx;padding-top: 30rpx;padding-bottom: 30rpx;" bindtap="refresh">60秒自动刷新</text>
+    </view>
+
+
+
+</view>
+
+
